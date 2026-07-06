@@ -1,0 +1,19 @@
+{
+  "name": "eletrica-parana-lp",
+  "version": "1.0.0",
+  "description": "Landing Page de Alta Conversão - Elétrica Paraná",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  },
+  "dependencies": {
+    "dotted-map": "^3.1.0",
+    "embla-carousel-react": "^8.6.0",
+    "lucide-react": "^1.21.0",
+    "recharts": "^3.8.1"
+  }
+}
