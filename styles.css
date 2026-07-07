@@ -4137,3 +4137,58 @@ ul {
 [data-theme="dark"] .slogan-band {
     background: linear-gradient(135deg, #060A14 0%, #0B2347 60%, #123059 100%);
 }
+
+/* ==========================================
+   GALERIA DE INSTALAÇÕES — FOTO REAL
+   ========================================== */
+.gallery-photo {
+    position: relative;
+    margin: 0;
+    aspect-ratio: 16 / 10;
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+}
+
+.gallery-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 62%;
+}
+
+.gallery-photo figcaption {
+    position: absolute;
+    inset: auto 0 0 0;
+    padding: 32px 16px 14px;
+    background: linear-gradient(to top, rgba(7, 29, 58, 0.92), rgba(7, 29, 58, 0));
+    text-align: center;
+}
+
+.gallery-photo figcaption span {
+    display: block;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--color-secondary);
+    margin-bottom: 4px;
+}
+
+.gallery-photo figcaption p {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.85);
+    margin: 0;
+}
+
+/* ==========================================
+   RODAPÉ — LOGO SEMPRE CLARO
+   (o rodapé tem fundo escuro fixo em qualquer tema,
+   então o wordmark "Elétrica Paraná" precisa ser sempre
+   a versão branca para manter contraste)
+   ========================================== */
+.footer-logo .logo-light-only {
+    display: none !important;
+}
+
+.footer-logo .logo-dark-only {
+    display: block !important;
+}
