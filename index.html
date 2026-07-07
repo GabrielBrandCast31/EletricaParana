@@ -52,7 +52,7 @@
     />
 
     <!-- Arquivo de Estilos Principal -->
-    <link rel="stylesheet" href="styles.css?v=20260707d">
+    <link rel="stylesheet" href="styles.css?v=20260707e">
 
     <!-- ==========================================
          SUBSTITUIR ANTES DE PUBLICAR (TAGS E TRACKING)
@@ -247,6 +247,23 @@
         ]
       }
     ]
+    </script>
+    <!-- Dados estruturados: navegação do site (apoio a sitelinks) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "itemListElement": [
+        { "@type": "SiteNavigationElement", "position": 1, "name": "Sobre Nós", "url": "https://www.eletricaparana.com.br/#sobre" },
+        { "@type": "SiteNavigationElement", "position": 2, "name": "Nossa Equipe", "url": "https://www.eletricaparana.com.br/#equipe" },
+        { "@type": "SiteNavigationElement", "position": 3, "name": "Produtos e Marcas", "url": "https://www.eletricaparana.com.br/#produtos" },
+        { "@type": "SiteNavigationElement", "position": 4, "name": "Engenharia e Montagens", "url": "https://www.eletricaparana.com.br/#engenharia" },
+        { "@type": "SiteNavigationElement", "position": 5, "name": "Solicitar Orçamento", "url": "https://www.eletricaparana.com.br/#orcamento" },
+        { "@type": "SiteNavigationElement", "position": 6, "name": "Avaliações de Clientes", "url": "https://www.eletricaparana.com.br/#avaliacoes" },
+        { "@type": "SiteNavigationElement", "position": 7, "name": "Dúvidas Frequentes", "url": "https://www.eletricaparana.com.br/#faq" },
+        { "@type": "SiteNavigationElement", "position": 8, "name": "Nossas Unidades", "url": "https://www.eletricaparana.com.br/#unidades" }
+      ]
+    }
     </script>
 </head>
 <body>
@@ -956,7 +973,7 @@
     <!-- ==========================================
          BLOCO 5 — SERVIÇOS TÉCNICOS (MONTAGEM DE QUADROS)
          ========================================== -->
-    <section class="services-section">
+    <section class="services-section" id="engenharia">
         <div class="background-marca-claro"></div>
         <div class="container">
             <div class="section-title-wrapper text-center">
@@ -1003,7 +1020,7 @@
     <!-- ==========================================
          BLOCO 6 — COMO PEDIR ORÇAMENTO (JORNADA)
          ========================================== -->
-    <section class="timeline-section">
+    <section class="timeline-section" id="processo">
         <div class="background-marca-claro"></div>
         <div class="container">
             <div class="section-title-wrapper text-center">
@@ -1159,7 +1176,7 @@
     <!-- ==========================================
          BLOCO 8 — PROVA SOCIAL
          ========================================== -->
-    <section class="social-proof-section">
+    <section class="social-proof-section" id="avaliacoes">
         <div class="container">
             <div class="section-title-wrapper text-center">
                 <span class="section-badge">SATISFAÇÃO DE QUEM COMPRA</span>
@@ -1223,6 +1240,46 @@
                             </figcaption>
                         </figure>
                     </div>
+                    <div class="gallery-item">
+                        <figure class="gallery-photo">
+                            <img src="assets/projetos/projeto-1.jpg" alt="Quadro de distribuição elétrica em montagem na engenharia da Elétrica Paraná" loading="lazy">
+                            <figcaption>
+                                <p>Quadro de distribuição montado sob medida</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="gallery-item">
+                        <figure class="gallery-photo">
+                            <img src="assets/projetos/projeto-2.jpg" alt="Painel de automação com inversores de frequência montado pela Elétrica Paraná" loading="lazy">
+                            <figcaption>
+                                <p>Painel de automação com inversores de frequência</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="gallery-item">
+                        <figure class="gallery-photo">
+                            <img src="assets/projetos/projeto-3.jpg" alt="Painel elétrico com soft-starters montado pela Elétrica Paraná" loading="lazy">
+                            <figcaption>
+                                <p>Painel com soft-starters e proteção dimensionada</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="gallery-item">
+                        <figure class="gallery-photo">
+                            <img src="assets/projetos/projeto-4.jpg" alt="Quadro geral de baixa tensão em montagem pela Elétrica Paraná" loading="lazy">
+                            <figcaption>
+                                <p>Quadro geral de baixa tensão em montagem</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="gallery-item">
+                        <figure class="gallery-photo">
+                            <img src="assets/projetos/projeto-5.jpg" alt="Painel de comando industrial montado pela Elétrica Paraná" loading="lazy">
+                            <figcaption>
+                                <p>Painel de comando industrial pronto para entrega</p>
+                            </figcaption>
+                        </figure>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1231,7 +1288,7 @@
     <!-- ==========================================
          BLOCO 9 — FAQ (ACORDEÃO DE PERGUNTAS E RESPOSTAS)
          ========================================== -->
-    <section class="faq-section">
+    <section class="faq-section" id="faq">
         <div class="container">
             <div class="section-title-wrapper text-center">
                 <span class="section-badge">DÚVIDAS FREQUENTES</span>
@@ -1312,7 +1369,7 @@
     <!-- ==========================================
          BLOCO 10 — LOJAS / COBERTURA
          ========================================== -->
-    <section class="locations-section">
+    <section class="locations-section" id="unidades">
         <div class="container">
             <div class="section-title-wrapper text-center">
                 <span class="section-badge">NOSSAS UNIDADES</span>
@@ -1392,6 +1449,21 @@
                     <a href="https://www.instagram.com/eletricaparanaoficial" target="_blank" rel="noopener" class="social-link">Instagram: @eletricaparanaoficial</a>
                 </div>
 
+                <div class="footer-links footer-nav-links">
+                    <h4>Navegue pelo Site</h4>
+                    <nav aria-label="Mapa do site">
+                        <ul>
+                            <li><a href="#sobre">Sobre Nós</a></li>
+                            <li><a href="#equipe">Nossa Equipe</a></li>
+                            <li><a href="#produtos">Produtos e Marcas</a></li>
+                            <li><a href="#engenharia">Engenharia e Montagens</a></li>
+                            <li><a href="#orcamento">Solicitar Orçamento</a></li>
+                            <li><a href="#avaliacoes">Avaliações de Clientes</a></li>
+                            <li><a href="#faq">Dúvidas Frequentes</a></li>
+                            <li><a href="#unidades">Nossas Unidades</a></li>
+                        </ul>
+                    </nav>
+                </div>
                 <div class="footer-links">
                     <h4>Nossas Unidades</h4>
                     <ul>
@@ -1442,6 +1514,6 @@
     </a>
 
     <!-- Arquivo Script Principal -->
-    <script type="module" src="script.js?v=20260707d"></script>
+    <script type="module" src="script.js?v=20260707e"></script>
 </body>
 </html>

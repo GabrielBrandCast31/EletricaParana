@@ -2057,7 +2057,7 @@ ul {
 
 .footer-grid {
     display: grid;
-    grid-template-columns: 1.2fr 0.8fr 1fr;
+    grid-template-columns: 1.2fr 0.7fr 0.8fr 1fr;
     gap: 40px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     padding-bottom: 40px;
@@ -4191,4 +4191,24 @@ ul {
 
 .footer-logo .logo-dark-only {
     display: block !important;
+}
+
+
+/* ==========================================
+   RODAPÉ — LINKS DE NAVEGAÇÃO (MAPA DO SITE)
+   ========================================== */
+.footer-nav-links a {
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-nav-links a:hover {
+    color: var(--color-secondary);
+}
+
+@media (max-width: 1024px) {
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
 }
