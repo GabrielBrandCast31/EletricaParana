@@ -4074,3 +4074,66 @@ ul {
     background-color: #262626;
     color: #E5E5E5;
 }
+
+/* ==========================================
+   FAIXA DE MARCA — SLOGAN
+   ========================================== */
+.slogan-band {
+    position: relative;
+    padding: 88px 0;
+    background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 55%, var(--color-primary-light) 100%);
+    overflow: hidden;
+}
+
+.slogan-band::before {
+    content: "";
+    position: absolute;
+    top: -40%;
+    right: -10%;
+    width: 60%;
+    height: 180%;
+    background: radial-gradient(circle, rgba(82, 187, 209, 0.18) 0%, rgba(82, 187, 209, 0) 65%);
+    pointer-events: none;
+}
+
+.slogan-band-container {
+    position: relative;
+    text-align: center;
+}
+
+.slogan-kicker {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: var(--color-secondary);
+    font-family: var(--font-ui);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+.slogan-text {
+    margin: 0;
+    color: var(--color-white);
+    font-family: var(--font-display);
+    font-size: clamp(1.75rem, 5vw, 3.75rem);
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+}
+
+.slogan-text em {
+    font-style: normal;
+    color: var(--color-secondary);
+}
+
+@media (max-width: 640px) {
+    .slogan-band {
+        padding: 64px 0;
+    }
+}
+
+/* Dark mode: mantém a faixa escura institucional */
+[data-theme="dark"] .slogan-band {
+    background: linear-gradient(135deg, #060A14 0%, #0B2347 60%, #123059 100%);
+}
